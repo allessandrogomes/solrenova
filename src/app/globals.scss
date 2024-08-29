@@ -1,0 +1,78 @@
+$colorDefault: #FFFFFF;
+$color1: #192655;
+$color2: #FF9843;
+$color3: #EEF7FF;
+$color4: #F1DEC6;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/100-Poppins-Thin.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/200-Poppins-ExtraLight.woff2') format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/300-Poppins-Light.woff2') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/400-Poppins-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/500-Poppins-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/600-Poppins-SemiBold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/700-Poppins-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/800-Poppins-ExtraBold.woff2') format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/900-Poppins-Black.woff2') format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.active {
+  padding-bottom: 1px;
+  border-bottom: 2px solid $color2;
+  color: $color2;
+}
+
+.swiper {
+  height: 100%;
+}

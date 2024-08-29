@@ -1,0 +1,58 @@
+@import "@/app/globals.scss";
+
+.container {
+    color: $color1;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        text-align: center;
+
+        h2 {
+            align-self: initial;
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .cards {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .line {
+        width: 70%;
+        height: 1px;
+        background-color: black;
+        opacity: 10%;
+    }
+
+    .cardsOurNumbers {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        @media (min-width: 760px) and (max-width: 1140px) {
+            width: 660px;
+        }
+    }
+}

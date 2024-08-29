@@ -1,0 +1,43 @@
+@import '@/app/globals.scss';
+
+.container {
+    width: 332px;
+    height: 204px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 1295px) {
+        align-items: center;
+    }
+
+    div {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color2;
+        width: 70px;
+        height: 70px;
+    }
+
+    h3, h4 {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: .875rem;
+        font-weight: 400;
+        text-align: justify;
+
+        @media (max-width: 1295px) {
+            text-align: center;
+        }
+    }
+}

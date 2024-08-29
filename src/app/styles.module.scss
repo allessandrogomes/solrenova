@@ -1,0 +1,14 @@
+@import "@/app/globals.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    font-family: "Poppins", sans-serif;
+    background: $color3;
+}
+
+.container>*:nth-child(2) {
+    margin-top: -120px;
+    /* Remove o gap entre o primeiro e o segundo item */
+}

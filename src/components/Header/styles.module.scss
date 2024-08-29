@@ -1,0 +1,32 @@
+@import '@/app/globals.scss';
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+}
+
+.ulNavbar {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    padding: 0;
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    li {
+        cursor: pointer;
+        font-weight: 700;
+        border-bottom: 2px solid transparent;
+        max-height: 26px;
+
+        &:hover {
+            color: $color2;
+            border-bottom-color: $color2;
+        }
+    }
+}

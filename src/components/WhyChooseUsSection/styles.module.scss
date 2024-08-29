@@ -1,0 +1,51 @@
+@import '@/app/globals.scss';
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $color1;
+    align-items: center;
+    padding: 0 100px;
+    gap: 50px;
+
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+
+    h2 {
+        @media (max-width: 1295px) {
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        @media (max-width: 1295px) {
+            justify-content: center;
+        }
+    }
+
+    .video {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* Proporção 16:9 */
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

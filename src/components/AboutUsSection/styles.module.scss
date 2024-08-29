@@ -1,0 +1,70 @@
+@import "@/app/globals.scss";
+
+.container {
+    color: $color1;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (max-width: 768px) {
+        padding: 0 30px;
+
+        h2 {
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        gap: 50px;
+        flex-direction: row;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 600px;
+
+        .paragraph {
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+
+    .images {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-self: center;
+
+        div {
+            width: 400px;
+            height: 267px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            @media (max-width: 500px) {
+                width: 250px;
+                height: 167px;
+            }
+        }
+
+        .enterprise {
+            background: url("/images/enterprise.webp") no-repeat;
+            background-size: contain;
+        }
+
+        .collaborators {
+            background: url("/images/collaborators.webp") no-repeat;
+            background-size: contain;
+        }
+    }
+}

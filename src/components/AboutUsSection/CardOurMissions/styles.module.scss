@@ -1,0 +1,15 @@
+@import "@/app/globals.scss";
+
+.container {
+    padding: 10px;
+    border: 1px solid $color1;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    h4 {
+        margin: 0;
+        font-weight: 400;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,19 @@
+@import "@/app/globals.scss";
+
+.title {
+    font-size: 3rem;
+    margin: 0;
+    max-width: 700px;
+    font-weight: 800;
+    line-height: 4rem;
+    align-self: flex-start;
+
+    @media (max-width: 768px) {
+        font-size: 1.875rem;
+        line-height: 2rem;
+    }
+
+    span {
+        color: $color2;
+    }
+}
