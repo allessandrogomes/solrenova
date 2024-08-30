@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import type { Viewport } from "next"
 
 export const metadata: Metadata = {
   title: 'SolRenova - Energia Solar de Qualidade',
@@ -18,10 +17,6 @@ export const metadata: Metadata = {
     description: 'Transforme sua energia com soluções solares da SolRenova. Sustentabilidade e economia ao seu alcance.',
   },
   icons: '/favicon.ico'
-}
-
-export const viewport: Viewport = {
-  width: 'width=device-width, initial-scale=1'
 }
 
 import "./globals.scss"
