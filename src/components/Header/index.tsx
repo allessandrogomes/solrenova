@@ -69,7 +69,7 @@ export default function Header() {
             </Toolbar>
             <nav className={style.nav}>
                 <ul className={style.ulNavbar}>
-                    {navItems.map(item => <li key={item.text}><Link style={{ display: 'block', height: '26px' }} to={item.to} spy smooth duration={500} offset={item.offset}>{item.text}</Link></li>)}
+                    {navItems.map(item => <li key={item.text}><Link role="button" aria-label="Scroll to respective Section" style={{ display: 'block', height: '26px' }} to={item.to} spy smooth duration={500} offset={item.offset}>{item.text}</Link></li>)}
                 </ul>
             </nav>
             <GetQuoteButton />
@@ -103,7 +103,7 @@ export default function Header() {
                 <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
                     <nav>
                         <ul className={style.ulNavbar}>
-                            {navItems.map(item => <li key={item.text}><Link style={{ display: 'block', height: '26px' }} to={item.to} spy smooth duration={500} offset={item.offset}>{item.text}</Link></li>)}
+                            {navItems.map(item => <li key={item.text}><Link role="button" aria-label="Scroll to respective Section" style={{ display: 'block', height: '26px' }} to={item.to} spy smooth duration={500} offset={item.offset}>{item.text}</Link></li>)}
                         </ul>
                     </nav>
                 </Box>
