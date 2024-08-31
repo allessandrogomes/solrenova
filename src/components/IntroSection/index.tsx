@@ -22,8 +22,9 @@ export default function IntroSection() {
                         title="Potencialize Seu Futuro com Energia Solar" 
                         subtitle="Reduza custos, valorize seu imóvel e contribua para um planeta mais sustentável. Descubra as vantagens da energia solar para sua casa ou empresa."
                         image="/images/banner1.webp"
-                        imgWidth={4173}
-                        imgHeight={3888}
+                        imgWidth={800}
+                        imgHeight={745}
+                        priority={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -31,8 +32,9 @@ export default function IntroSection() {
                         title="Suporte Contínuo para Seu Sistema Solar" 
                         subtitle="Estamos ao seu lado após a instalação, oferecendo suporte técnico dedicado e manutenção para assegurar que sua energia solar funcione com o máximo desempenho, todos os dias."
                         image="/images/banner2.webp"
-                        imgWidth={2744}
-                        imgHeight={2624}
+                        imgWidth={800}
+                        imgHeight={765}
+                        priority={false}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -40,8 +42,9 @@ export default function IntroSection() {
                         title="Supervisão Inteligente em Tempo Real" 
                         subtitle="Nossa tecnologia exclusiva permite que você acompanhe a performance do seu sistema solar em tempo real, garantindo máxima eficiência e identificação imediata de qualquer anomalia."
                         image="/images/banner3.webp"
-                        imgWidth={3360}
-                        imgHeight={5040}
+                        imgWidth={800}
+                        imgHeight={1200}
+                        priority={false}
                     />
                 </SwiperSlide>
             </Swiper>

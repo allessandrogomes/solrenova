@@ -6,10 +6,11 @@ interface ISlideIntro {
     title: string,
     subtitle: string,
     imgWidth: number,
-    imgHeight: number
+    imgHeight: number,
+    priority: boolean
 }
 
-export default function SlideIntro({ image, title, subtitle, imgWidth, imgHeight }: ISlideIntro) {
+export default function SlideIntro({ image, title, subtitle, imgWidth, imgHeight, priority }: ISlideIntro) {
     return (
         <div className={styles.slide}>
             <div className={styles.text}>
@@ -19,7 +20,7 @@ export default function SlideIntro({ image, title, subtitle, imgWidth, imgHeight
             <div className={styles.image}>
                 <Image 
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    priority 
+                    priority={priority}
                     src={image} 
                     alt="Imagem do Slide" 
                     width={imgWidth} height={imgHeight}/>
